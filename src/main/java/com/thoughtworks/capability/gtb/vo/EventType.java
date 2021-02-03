@@ -8,4 +8,9 @@ public enum EventType {
   EventType(String code) {
     this.code = code;
   }
+
+  @JsonValue
+  public String getCode() {
+    return code;
+  }
 }
